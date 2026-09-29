@@ -1,10 +1,11 @@
 **Food Delivery Order Tracking System**
-
+===============================================================================
 A modular C-based Food Delivery Order Tracking System designed to manage food delivery orders across a city's delivery network.<br>
 
 The system stores customer, restaurant, order, delivery agent, and delivery status information. It also supports automatic agent assignment, billing calculation, order searching, and restaurant-wise order analysis.
 
  **Project Overview**
+-------------------------------------------------------------------------------
 
 The Food Delivery Order Tracking System uses C programming concepts such as:<br>
 
@@ -22,6 +23,7 @@ The project can store up to 500 food delivery orders using:<br>
 struct Delivery orders[500];<br>
 
 **Objectives**
+------------------------------------------------------------------------
 
 The main objectives of this project are:<br>
 
@@ -34,6 +36,7 @@ Display all orders assigned to a particular delivery agent.<br>
 Find the restaurant with the highest total order value.<br>
 
 **Features**
+------------------------------------------------------------------------
 
 1. Add New Order<br>
 
@@ -60,6 +63,7 @@ Delivery charge<br>
 Final amount<br>
 Delivery agent<br>
 Delivery status<br>
+
 3. Round-Robin Agent Assignment<br>
 
 Pending orders are automatically assigned to delivery agents in round-robin order.<br>
@@ -80,6 +84,7 @@ Amit<br>
 Sneha<br>
 Priya<br>
 Rohit<br>
+
 4. Final Amount Calculation<br>
 
 The system calculates:<br>
@@ -96,6 +101,7 @@ Platform Fee (5%) = ₹25<br>
 Delivery Charge   = ₹30<br>
 --------------------------------<br>
 Final Amount      = ₹555<br>
+
 5. Update Delivery Status<br>
 
 The delivery status can be updated to:<br>
@@ -106,6 +112,7 @@ Picked Up<br>
 Out for Delivery<br>
 Delivered<br>
 Cancelled<br>
+
 6. Search Order<br>
 
 Users can search for a specific order using its Order ID.<br>
@@ -125,6 +132,7 @@ Agent: Rahul<br>
 
 Order 101 → Food Corner → Delivered<br>
 Order 106 → Pizza Point → Out for Delivery<br>
+
 8. Highest Order Value Restaurant<br>
 The system calculates the total order value of each restaurant across all stored orders.<br>
 
@@ -135,22 +143,24 @@ Pizza Point  → ₹1500<br>
 Spice Hub    → ₹400<br>
 
 The system identifies the restaurant with the highest total order value.<br>
+----------------------------------------------------------------------------
 
  **Project Structure**
-Food-Delivery-Order-Tracking-System/
-│
-├── main.c
-│
-├── delivery.c
-├── delivery.h
-│
-├── agent.c
-├── agent.h
-│
-├── restaurant.c
-├── restaurant.h
-│
-└── README.md
+Food-Delivery-Order-Tracking-System/<br>
+│<br>
+├── main.c<br>
+│<br>
+├── delivery.c<br>
+├── delivery.h<br>
+│<br>
+├── agent.c<br>
+├── agent.h<br>
+│<br>
+├── restaurant.c<br>
+├── restaurant.h<br>
+│<br>
+└── README.md<br>
+---------------------------------------------------------------------------------
 
  **System Workflow**
 Start<br>
@@ -176,12 +186,17 @@ Track / Search Order<br>
 Analyze Restaurant Orders<br>
   ↓<br>
 Exit<br>
+
 **Technologies Used**
+---------------------------------------------------------------------------------
+
 Programming Language: C<br>
 Compiler: GCC / MinGW<br>
 IDE: Visual Studio Code<br>
 Version Control: Git<br>
 Repository: GitHub<br>
+------------------------------------------------------------------------------------
+
 **How to Run**
 Step 1: Clone the repository<br>
 git clone https://github.com/kurundwadeakanksha/Food-Delivery-Order-Tracking-System.git<br>
@@ -197,7 +212,8 @@ Step 4: Run the program<br>
 On Windows PowerShell:<br>
 
 .\food_delivery.exe<br>
-📋 Main Menu<br>
+
+Main Menu<br>
 ============================================<br>
       FOOD DELIVERY ORDER TRACKING SYSTEM<br>
 ============================================<br>
@@ -211,7 +227,9 @@ On Windows PowerShell:<br>
 8. Find Restaurant with Highest Order Value<br>
 9. Display Pending Orders<br>
 10. Exit<br>
-🧠 C Concepts Used<br>
+
+--------------------------------------------------------------
+ C Concepts Used<br>
 
 This project demonstrates the following C programming concepts:<br>
 
@@ -255,6 +273,7 @@ Modular Programming<br>
 The project is divided into multiple .c and .h files for better organization.<br>
 
 Billing Formula<br>
+
 Platform Fee = Total Amount × 5%<br>
 
 Final Amount =Total Amount + Platform Fee + ₹30<br>
@@ -269,7 +288,8 @@ The system currently uses five delivery agents:<br>
 5. Rohit<br>
 
 Orders are assigned using round-robin scheduling.<br>
-
+---------------------------------------------------------------------
+ 
 **Future Enhancements**
 
 The project can be extended with:<br>
